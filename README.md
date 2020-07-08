@@ -1,4 +1,4 @@
-# Uptact
+p# Uptact
 
 This is your first Django project. For this project, functionality has already been added to this sample Django application. You will add new functionality throughout the project in order to better understand how all the pieces of Django work together.
 
