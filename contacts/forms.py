@@ -17,14 +17,25 @@ class ContactForm(forms.ModelForm):
             'birthday',
         ]
       
-        
         widgets = {
-        'birthday': forms.DateInput(format=('%m/%d/%Y'), attrs={'class':'form-control','placeholder' : 'Select a date' , 'type' : 'date' }),
+            'birthday': 
+                forms.DateInput(
+                format=('%m/%d/%Y'), 
+                attrs={
+                    'class':'form-control',
+                    'placeholder' : 'Select a date', 
+                    'type' : 'date' 
+                }),
         }
 
 class NoteForm(forms.ModelForm):
     class Meta:
         model = Note
-        fields = [
+        fields =[
             'note' 
         ] 
+    # new_noteform = forms.Textarea(label='Note', max_length=250
+    
+    
+  
+  

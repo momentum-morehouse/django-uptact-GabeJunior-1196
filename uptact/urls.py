@@ -18,6 +18,7 @@ from django.conf import settings
 from django.urls import include, path
 from contacts import views as contacts_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', contacts_views.list_contacts, name='list_contacts'),
@@ -28,8 +29,8 @@ urlpatterns = [
     path('contacts/<int:pk>/delete/',
          contacts_views.delete_contact,
          name='delete_contact'),
-    path('contacts/<int:pk>/',contacts_views.contact_detail, name='contact_view'),  
-    path('contacts/<int:pk>/notes/', contacts_views.add_note, name='add_note' ),
+    path('contacts/<int:pk>/', contacts_views.contact_detail, name='contact_view'),  
+    path('contacts/<int:pk>/notes/',contacts_views.post_note, name='notes' )
      
 ]
 
